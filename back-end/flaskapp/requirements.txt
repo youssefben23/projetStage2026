@@ -1,0 +1,33 @@
+# ============================================
+# FICHIER: backend/requirements.txt
+# Dépendances Python
+# ============================================
+
+# Framework Web
+Flask==3.0.0
+Flask-SQLAlchemy==3.1.1
+Flask-CORS==4.0.0
+
+# Base de données
+PyMySQL==1.1.0
+cryptography==41.0.7
+
+# Authentication & Security
+PyJWT==2.8.0
+werkzeug==3.0.1
+
+# Utilitaires
+python-dotenv==1.0.0
+
+# Production
+gunicorn==21.2.0
+
+# Tests (optionnel)
+pytest==7.4.3
+pytest-flask==1.3.0
+pytest-cov==4.1.0
+
+# Développement (optionnel)
+flask-migrate==4.0.5
+black==23.12.1
+flake8==6.1.0

@@ -1,0 +1,39 @@
+============================================
+INSTRUCTIONS SIMPLES - PROJET FONCTIONNEL
+============================================
+
+ETAPE 1: Double-cliquez sur:
+   SOLUTION_SIMPLE_FONCTIONNELLE.bat
+
+ETAPE 2: Attendez 5-10 minutes
+   (Ne fermez pas la fenêtre!)
+
+ETAPE 3: Ouvrez votre navigateur sur:
+   http://localhost:4200
+
+C'EST TOUT!
+
+============================================
+Si vous voyez des erreurs, faites ceci:
+============================================
+
+1. Fermez toutes les fenêtres de terminal
+
+2. Ouvrez une NOUVELLE fenêtre de terminal
+
+3. Tapez ces commandes UNE PAR UNE:
+
+   cd C:\Projet-Stage-2026\front-end
+   
+   rmdir /s /q node_modules
+   del package-lock.json
+   
+   npm install --legacy-peer-deps
+   
+   npm start
+
+4. Attendez et ouvrez http://localhost:4200
+
+============================================
+Votre projet fonctionnera!
+============================================

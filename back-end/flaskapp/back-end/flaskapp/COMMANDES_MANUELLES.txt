@@ -1,0 +1,36 @@
+============================================
+COMMANDES MANUELLES - DÉMARRAGE DU BACKEND
+============================================
+
+1. OUVREZ UN TERMINAL (PowerShell ou CMD)
+
+2. ALLEZ DANS LE DOSSIER:
+   cd C:\Projet-Stage-2026\back-end\flaskapp
+
+3. ARRÊTEZ LES ANCIENS PROCESSUS (si nécessaire):
+   netstat -ano | findstr :5000
+   taskkill /F /PID <PID>
+
+   OU pour arrêter tous les processus sur le port 5000:
+   for /f "tokens=5" %a in ('netstat -ano ^| findstr :5000 ^| findstr LISTENING') do taskkill /F /PID %a
+
+4. ACTIVEZ L'ENVIRONNEMENT VIRTUEL:
+   venv\Scripts\activate
+
+   Vous devriez voir (venv) au début de la ligne.
+
+5. VÉRIFIEZ LES DÉPENDANCES (optionnel):
+   python -c "import flask; print('Flask OK')"
+
+   Si erreur, installez:
+   pip install -r requirements.txt
+
+6. DÉMARREZ LE SERVEUR:
+   python run.py
+
+7. VÉRIFIEZ:
+   Vous devriez voir: " * Running on http://127.0.0.1:5000"
+
+============================================
+C'EST TOUT! NE FERMEZ PAS LA FENÊTRE!
+============================================
